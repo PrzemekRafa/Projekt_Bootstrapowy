@@ -1,0 +1,58 @@
+.navbar {
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+    background-color: rgba(14, 216, 214, 0);
+    transition: background-color .25s linear;
+    border: 0;
+}
+
+.navbar_temp {
+    background-color: rgba(14, 216, 214, 1);
+}
+
+#head {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-image: url(../img/header/pictures_on_the_wall.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(119, 119, 119, 0.4);
+}
+
+#centered_head_content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.roboto {
+    font-family: 'Roboto Slab', serif;    
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.droid_italic {
+    font-family: 'Droid Serif', serif;
+    font-style: italic;    
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.navbar-default .navbar-brand {
+    color: #ffffff;
+}
+
+
