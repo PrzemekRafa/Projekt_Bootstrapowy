@@ -9,9 +9,12 @@
     
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Slab:100,300,400,700&amp;subset=latin-ext" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Slab:100,300,400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
 </head>
-<body>   
+<body>
+
+    <!-- NAV MENU -->
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -28,6 +31,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right montserrat">
+                    <li><a href="#head"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#team">Team</a></li>
@@ -39,6 +43,7 @@
         <!-- /.container-fluid -->
     </nav>  
     
+    <!-- HEADER -->
     <header id="head">
         
         <div id="centered_head_content">
@@ -49,80 +54,169 @@
             
     </header>
     
+    <!-- SERVICES -->
     <section id="services">
         <h3 class="text-uppercase text-center montserrat">Services</h3>
         <p class="droid_italic text-center">Distinctio molestias officia quibusdam quisquam expedita necessitatibus</p>
         <div id="container">
-            <div id="row">
+            <div id="row" class="text-center">
                 <div class="col-xs-12 col-md-4">
-                    <h4 class="text-center">Web developement</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio molestias officia quibusdam quisquam expedita necessitatibus sapiente quidem ex repellat rerum cumque perferendis beatae, animi eaque dignissimos recusandae incidunt illum veniam!</p>
+
+                        <i class="rotating-icons fa fa-briefcase" aria-hidden="true"></i>
+
+                    <h4 class="text-center text-capitalize montserrat">Web developement</h4>
+                    <p>Lorem ipsum dolor sit amet, Errum rerrum hic. Distinctio molestias officia quibusdam quisquam expedita necessitatibus sapiente quidem ex repellat rerum cumque perferendis beatae, animi eaque dignissimos recusandae incidunt illum veniam!</p>
                 </div>
                 <div class="col-xs-12 col-md-4">
-                    <h4 class="text-center">E-commerce</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio molestias officia quibusdam quisquam expedita necessitatibus sapiente quidem ex repellat rerum cumque perferendis beatae, animi eaque dignissimos recusandae incidunt illum veniam!</p>
+
+                        <i class="rotating-icons fa fa-cloud-download" aria-hidden="true"></i>
+
+                    <h4 class="text-center text-capitalize montserrat">E-commerce</h4>
+                    <p>Lorem ipsum dolor sit amet, Errum rerrum hic. Distinctio molestias officia quibusdam quisquam expedita necessitatibus sapiente quidem ex repellat rerum cumque perferendis beatae, animi eaque dignissimos recusandae incidunt illum veniam!</p>
                 </div>
                 <div class="col-xs-12 col-md-4">
-                    <h4 class="text-center">Web design</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio molestias officia quibusdam quisquam expedita necessitatibus sapiente quidem ex repellat rerum cumque perferendis beatae, animi eaque dignissimos recusandae incidunt illum veniam!</p>
+
+                        <i class="rotating-icons fa fa-comment" aria-hidden="true"></i>
+
+                    <h4 class="text-center text-capitalize montserrat">Web design</h4>
+                    <p>Lorem ipsum dolor sit amet, Errum rerrum hic. Distinctio molestias officia quibusdam quisquam expedita necessitatibus sapiente quidem ex repellat rerum cumque perferendis beatae, animi eaque dignissimos recusandae incidunt illum veniam!</p>
                 </div>
             </div>
         </div>
     </section>
+    
+    <!-- PORTFOLIO -->
     <section id="portfolio">
         <h3 class="text-uppercase text-center montserrat">Portfolio</h3>
         <p class="droid_italic text-center">Distinctio molestias officia quibusdam quisquam expedita necessitatibus</p>
         <div id="container">
             <div id="row">
                 <div class="col-xs-12 col-md-4">
-                    <div class="portfolio-pics">
-                             <img src="img/portfolio/box_of_cookies.jpg">
+                    <div id="folio1" class="portfolio-pics">
+                        <div class="maska text-center">
+                            <i class="cross fa fa-plus" aria-hidden="true"></i>    
+                        </div>
                     </div>
-                    <h4 class="text-center">consectetur adipisicing elit</h4>
-                    <p class="droid_itaic text-center">Distinctio molestias officia quibusdam</p>
+                    <h4 class="text-center text-capitalize montserrat">Errum rerrum hic</h4>
+                    <p class="droid_italic text-center">Distinctio molestias officia quibusdam</p>
                 </div>
                 <div class="col-xs-12 col-md-4">
-                    <div class="portfolio-pics">
-                        <img src="img/portfolio/chaotic_paint.jpg">
+                    <div id="folio2" class="portfolio-pics">
+                        <div class="maska text-center">
+                            <i class="cross fa fa-plus" aria-hidden="true"></i>
+                        </div>
                     </div>             
-                    <h4 class="text-center">consectetur adipisicing elit</h4>
-                    <p class="droid_itaic text-center">Distinctio molestias officia quibusdam</p>
+                    <h4 class="text-center text-capitalize montserrat">Errum rerrum hic</h4>
+                    <p class="droid_italic text-center">Distinctio molestias officia quibusdam</p>
                 </div>
                 <div class="col-xs-12 col-md-4">
-                    <div class="portfolio-pics">
-                        <img src="img/portfolio/chestnut_on_bracket.jpg">
-                    </div>                   <h4 class="text-center">consectetur adipisicing elit</h4>
-                    <p class="droid_itaic text-center">Distinctio molestias officia quibusdam</p>
+                    <div id="folio3" class="portfolio-pics">
+                        <div class="maska text-center">
+                            <i class="cross fa fa-plus" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <h4 class="text-center text-capitalize montserrat">Errum rerrum hic</h4>
+                    <p class="droid_italic text-center">Distinctio molestias officia quibusdam</p>
                 </div>
             </div>
             <div id="row">
                 <div class="col-xs-12 col-md-4">
-                    <div class="portfolio-pics">
-                        <img src="img/portfolio/child_with_blue_paint.jpg">
+                    <div id="folio4" class="portfolio-pics">
+                        <div class="maska text-center">
+                            <i class="cross fa fa-plus" aria-hidden="true"></i>
+                        </div>
                     </div>
-                    <h4 class="text-center">consectetur adipisicing elit</h4>
-                    <p class="droid_itaic text-center">Distinctio molestias officia quibusdam</p>
+                    <h4 class="text-center text-capitalize montserrat">Errum rerrum hic</h4>
+                    <p class="droid_italic text-center">Distinctio molestias officia quibusdam</p>
                 </div>
                 <div class="col-xs-12 col-md-4">
-                    <div class="portfolio-pics">
-                        <img src="img/portfolio/house_with_blue_doors.jpg">
+                    <div id="folio5" class="portfolio-pics">
+                        <div class="maska text-center">
+                            <i class="cross fa fa-plus" aria-hidden="true"></i>
+                        </div>
                     </div>
-                    <h4 class="text-center">consectetur adipisicing elit</h4>
-                    <p class="droid_itaic text-center">Distinctio molestias officia quibusdam</p>
+                    <h4 class="text-center text-capitalize montserrat">Errum rerrum hic</h4>
+                    <p class="droid_italic text-center">Distinctio molestias officia quibusdam</p>
                 </div>
                 <div class="col-xs-12 col-md-4">
-                    <div class="portfolio-pics">
-                           <img src="img/portfolio/typing_on_laptop.jpg">
+                    <div id="folio6" class="portfolio-pics">
+                        <div class="maska text-center">
+                            <i class="cross fa fa-plus" aria-hidden="true"></i>
+                        </div>   
                     </div>
-                    <h4 class="text-center">consectetur adipisicing elit</h4>
-                    <p class="droid_itaic text-center">Distinctio molestias officia quibusdam</p>
+                    <h4 class="text-center text-capitalize montserrat">Errum rerrum hic</h4>
+                    <p class="droid_italic text-center">Distinctio molestias officia quibusdam</p>
                 </div>
             </div>
         </div>        
     </section>
+
+    <!-- TEAM -->
+    <section id="team">
+        <h3 class="text-uppercase text-center montserrat">Meet our team</h3>
+        <p class="droid_italic text-center">Distinctio molestias officia quibusdam quisquam expedita necessitatibus</p>
+        <div id="container">
+            <div id="row">
+                <div class="col-xs-12 col-md-4">
+                    <div id="team1" class="team_pics"></div>
+                    <h4 class="text-center text-capitalize montserrat">Eric Stern</h4>
+                    <p class="droid_italic text-center">Account Menager</p>
+                    <div class="socialmedia-container text-center">
+                        <a href="http://www.facebook.com" target="_blank">
+                            <i class="fa fa-facebook social_icon" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank">
+                            <i class="fa fa-twitter social_icon" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank">
+                            <i class="fa fa-linkedin social_icon" aria-hidden="true"></i>
+                        </a>
+                    </div>   
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div id="team2" class="team_pics"></div>
+                    <h4 class="text-center text-capitalize montserrat">Martin Muller</h4>
+                    <p class="droid_italic text-center">Developer</p>
+                    <div class="socialmedia-container text-center">
+                        <a href="http://www.facebook.com" target="_blank">
+                            <i class="fa fa-facebook social_icon" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank">
+                            <i class="fa fa-twitter social_icon" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank">
+                            <i class="fa fa-linkedin social_icon" aria-hidden="true"></i>
+                        </a>
+                    </div> 
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div id="team3" class="team_pics"></div>
+                    <h4 class="text-center text-capitalize montserrat">Eric Stern</h4>
+                    <p class="droid_italic text-center">Anna Smith</p>
+                    <div class="socialmedia-container text-center">
+                        <a href="http://www.facebook.com" target="_blank">
+                            <i class="fa fa-facebook social_icon" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank">
+                            <i class="fa fa-twitter social_icon" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank">
+                            <i class="fa fa-linkedin social_icon" aria-hidden="true"></i>
+                        </a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <p class="droid_italic text-center">Distinctio molestias officia quibusdam quisquam expedita necessitatibus</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h3 class="text-uppercase text-center montserrat">Contact</h3>
+        <p class="droid_italic text-center">Distinctio molestias officia quibusdam</p>
+        
+    </section>
     
-    <section id="team"></section>
-    <section id="contact"></section>
     <footer></footer>
     
     

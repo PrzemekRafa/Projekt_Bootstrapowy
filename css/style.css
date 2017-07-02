@@ -1,3 +1,18 @@
+/* FONTS */
+.roboto {
+    font-family: 'Roboto Slab', serif;    
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.droid_italic {
+    font-family: 'Droid Serif', serif;
+    font-style: italic;
+}
+
+/* NAV MENU */
 .navbar {
     position: fixed;
     width: 100vw;
@@ -11,15 +26,66 @@
     background-color: rgba(14, 216, 214, 1);
 }
 
+.navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: color .25s linear;
+    text-align: right;
+}
+
+.navbar-default .navbar-nav > li {
+    padding-right: 2vw;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-brand:hover {
+    color: rgba(14, 216, 214, 1);
+}
+
+.navbar_temp > div > div > .navbar-nav>li>a:hover,
+.navbar_temp > div > div > .navbar-brand:hover {
+    color: #333333;
+}
+
+.navbar-default .navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none;
+}
+
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+
+.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: rgba(14, 216, 214, 1);
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar {
+    background-color: rgba(14, 216, 214, 1);
+}
+
+.navbar-default .navbar-toggle:active, .navbar-default .navbar-toggle:hover {
+        background-color: #ffffff;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+        background-color: none;
+}
+
+
+/* HEADER */
 #head {
     width: 100vw;
     height: 100vh;
     position: relative;
     background-image: url(../img/header/pictures_on_the_wall.jpg);
-/*
-    background-position: 30% -400px;
-    background-size: 265%;
-*/
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -36,39 +102,6 @@
     left: 0;
     right: 0;
     text-align: center;
-}
-
-.roboto {
-    font-family: 'Roboto Slab', serif;    
-}
-
-.montserrat {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.droid_italic {
-    font-family: 'Droid Serif', serif;
-    font-style: italic;
-}
-
-.navbar-default .navbar-nav>li>a {
-    color: #ffffff;
-    text-transform: uppercase;
-    transition: color .25s linear;
-}
-
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-brand:hover {
-    color: rgba(14, 216, 214, 1);
-}
-
-.navbar_temp > div > div >  .navbar-nav>li>a:hover,
-.navbar_temp > div > div > .navbar-brand:hover {
-    color: #333333;
-}
-
-.navbar-default .navbar-brand {
-    color: #ffffff;
 }
 
 #centered_head_content > h2 {
@@ -91,25 +124,192 @@
     padding: 2vh 4vw;
 }
 
-/*
-#services > h3 {
-    text-align: center;
-}
-*/
-
-.portfolio-pics {
-    height: 27vh;
-    overflow: hidden;
-}
-
-.portfolio-pics > img {
-    width: 100%;
-}
-
+/* SECTION COMMON SETTINGS */
 section > h3 {
     color: #333333;
 }
 
 section {
-    padding: 24vh 12vw;
+    padding: 10vh 12vw 10vh 12vw;
+    overflow: hidden;
+}
+
+p {
+    color: #777777;
+}
+
+h4 {
+    font-weight: 
+}
+
+/* SERVICES */
+div > .rotating-icons {
+    width: 12vh;
+    height: 12vh;
+    border-radius: 50%;
+    border-color: rgba(14, 216, 214, 1);
+    border-style: solid;
+    border-width: 2px;
+    color: #ffffff;
+    background-color: rgba(14, 216, 214, 1);
+    font-size: 7vh;
+    line-height: 12vh;
+    transition: all .25s linear;
+    text-align: center;
+    margin: 2vh 0 2vh 0;
+}
+
+div > .rotating-icons:hover {
+    color: rgba(14, 216, 214, 1);
+    background-color: #ffffff;
+    transform: rotate(360deg);
+}
+
+/* PORTFOLIO */
+#portfolio {
+    background-color: #f7f7f7;
+}
+
+.portfolio-pics {
+    height: 18vw;
+    width:  24vw;
+    background-size: 115%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all .1s ease-in;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.portfolio-pics:hover {
+    background-size: 125%;
+}
+
+#folio1 {
+    background-image: url(../img/portfolio/box_of_cookies.jpg);
+}
+
+#folio2 {
+    background-image: url(../img/portfolio/chaotic_paint.jpg);
+}
+
+#folio3 {
+    background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
+}
+
+#folio4 {
+    background-image: url(../img/portfolio/child_with_blue_paint.jpg);
+}
+
+#folio5 {
+    background-image: url(../img/portfolio/house_with_blue_doors.jpg);
+}
+
+#folio6 {
+    background-image: url(../img/portfolio/typing_on_laptop.jpg);
+}
+
+.maska {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(14, 216, 214, 0);
+    text-align: center;
+    line-height: 18vw;
+    font-size: 8vh;
+    color: rgba(255, 255, 255, 0);
+}
+
+.portfolio-pics:hover > .maska {
+    background-color: rgba(14, 216, 214, 0.5);
+    color: rgba(255, 255, 255, 1);
+}
+
+.maska > .cross,
+.maska {
+    transition: all .1s ease-in;
+}
+
+.portfolio-pics:hover > .maska > .cross {
+    transform: scale(1.2);
+}
+
+/* TEAM */
+.team_pics {
+    border-radius: 50%;
+    width: 10vw;
+    height: 10vw;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#team1 {
+    background-image: url(../img/team/man-1.jpg);
+}
+
+#team2 {
+    background-image: url(../img/team/man-2.jpg);
+}
+
+#team3 {
+    background-image: url(../img/team/woman-1.jpg);
+}
+
+.socialmedia-container > a {
+    text-decoration: none;
+}
+
+.socialmedia-container > a > .social_icon {
+    width: 2.2vw;
+    height: 2.2vw;
+    font-size: 1vw;
+    text-align: center;
+    border: 2px solid;
+    border-color: #222222;
+    background-color: #222222;
+    border-radius: 50%;
+    color: #ffffff;
+    display: inline-block;
+    line-height: 2.2vw;
+    box-sizing: border-box;
+    transition: all .1s linear;
+}
+
+.socialmedia-container > a > .social_icon:hover {
+    border-color: #0ed8d6;
+    background-color: #0ed8d6;
+}
+
+.socialmedia-container {
+    
+}
+
+#team > div {
+    overflow: hidden;
+}
+
+#team > p:last-child {
+    margin-top: 5vh;
+    overflow: hidden;
+}
+
+/* CONTACT */
+
+
+#contact {
+    background-image: url(../img/footer/world-map.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-color: rgba(119, 119, 119, 0.8);
+}
+
+#contact > h3,
+#contact > p {
+    color: #ffffff;
 }
