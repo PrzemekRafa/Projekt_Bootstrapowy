@@ -16,8 +16,13 @@
     height: 100vh;
     position: relative;
     background-image: url(../img/header/pictures_on_the_wall.jpg);
+/*
+    background-position: 30% -400px;
+    background-size: 265%;
+*/
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     background-blend-mode: multiply;
     background-color: rgba(119, 119, 119, 0.4);
 }
@@ -43,16 +48,68 @@
 
 .droid_italic {
     font-family: 'Droid Serif', serif;
-    font-style: italic;    
+    font-style: italic;
 }
 
 .navbar-default .navbar-nav>li>a {
     color: #ffffff;
     text-transform: uppercase;
+    transition: color .25s linear;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-brand:hover {
+    color: rgba(14, 216, 214, 1);
+}
+
+.navbar_temp > div > div >  .navbar-nav>li>a:hover,
+.navbar_temp > div > div > .navbar-brand:hover {
+    color: #333333;
 }
 
 .navbar-default .navbar-brand {
     color: #ffffff;
 }
 
+#centered_head_content > h2 {
+    color: #ffffff;        
+    font-size: 6.5vh;
+}
 
+#centered_head_content > h1 {
+    color: #ffffff;    
+    text-transform: uppercase;
+    font-size: 8vh;
+    margin-top: 3vh;
+    margin-bottom: 4vh;
+}
+
+#head > div > button {
+    background-color: rgba(14, 216, 214, 1);
+    text-transform: uppercase;
+    font-size: 2vh;
+    padding: 2vh 4vw;
+}
+
+/*
+#services > h3 {
+    text-align: center;
+}
+*/
+
+.portfolio-pics {
+    height: 27vh;
+    overflow: hidden;
+}
+
+.portfolio-pics > img {
+    width: 100%;
+}
+
+section > h3 {
+    color: #333333;
+}
+
+section {
+    padding: 24vh 12vw;
+}
